@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:osmer/core/spacing/spacing.dart';
-import 'package:osmer/features/register_page/ui/widgets/register_card/ui/register_card_formating.dart';
+import 'package:osmer/features/register_page/ui/widgets/register_card/ui/register_card.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_design/ui/widgets/register_design_button_formating.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_design/ui/widgets/register_design_title_and_sub_title_formating.dart';
 
@@ -20,11 +20,10 @@ class RegisterDesignFormating extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return RegisterCardFormating(
+    return RegisterCard(
       child: Padding(
         padding: EdgeInsets.all(20.0.w),
         child: Column(
-            crossAxisAlignment: CrossAxisAlignment.end,
             children: [
               Expanded(
                 child: Column(

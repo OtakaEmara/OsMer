@@ -14,6 +14,8 @@ class RegisterFullNameTextFieldFormating extends StatelessWidget {
         children: [
           MainTextFormField(
             controller: MainConstant.firstNameController,
+            keyboardType: TextInputType.name,
+            prefixIcon: const Icon(Icons.person),
             labelText: 'First name',
             maxLines: 1,
             validator: (p0) {
@@ -29,6 +31,8 @@ class RegisterFullNameTextFieldFormating extends StatelessWidget {
           Spacing.verticalSpace(20),
           MainTextFormField(
             controller: MainConstant.lastNameController,
+            keyboardType: TextInputType.name,
+            prefixIcon: const Icon(Icons.person),
             labelText: 'Last name',
             maxLines: 1,
             validator: (p0) {

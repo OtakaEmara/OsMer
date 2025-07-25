@@ -11,7 +11,8 @@ class RegisterDesign extends StatelessWidget {
   const RegisterDesign({
     super.key,
     required this.title, required this.subTitle, required this.buttonText,
-    required this.registerCardBody, required this.onTap});
+    required this.registerCardBody, required this.onTap,
+  });
 
   @override
   Widget build(BuildContext context) {

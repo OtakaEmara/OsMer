@@ -5,8 +5,8 @@ import 'package:osmer/core/routing/routing_constant.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_design/ui/register_design.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_full_name/ui/widgets/register_full_name_text_field_formating.dart';
 
-class RegisterFullNameFormating extends StatelessWidget {
-  const RegisterFullNameFormating({super.key});
+class RegisterFullName extends StatelessWidget {
+  const RegisterFullName({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -17,7 +17,7 @@ class RegisterFullNameFormating extends StatelessWidget {
       registerCardBody: RegisterFullNameTextFieldFormating(),
       onTap: () {
         if (MainConstant.fullNameFormKey.currentState!.validate()) {
-          context.pushNamed(RoutingConstant.registerBirthdayPage);
+          context.pushNamed(RoutingConstant.registerBirthday);
         }
       },
     );

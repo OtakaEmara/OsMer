@@ -11,8 +11,8 @@ class RegisterDesignTitleAndSubTitleFormating extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Text(title,style: MainTextStyles.font22black500weight),
-        Text(subTitle,style: MainTextStyles.font17grey300weight),
+        Text(title,style: MainTextStyles.font20black500weight),
+        Text(subTitle,style: MainTextStyles.font16grey300weight),
       ],
     );
   }

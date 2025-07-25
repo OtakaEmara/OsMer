@@ -6,5 +6,10 @@ class MainConstant{
   static var lastNameController = TextEditingController();
   static var birthdayFormKey = GlobalKey<FormState>();
   static var birthdayController = TextEditingController();
-
+  static var emailFormKey = GlobalKey<FormState>();
+  static var emailController = TextEditingController();
+  static var mobileFormKey = GlobalKey<FormState>();
+  static var mobileController = TextEditingController();
+  static bool isEmailPage = true;
+  static bool isMobilePage = false;
 }

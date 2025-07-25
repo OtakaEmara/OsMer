@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:osmer/core/theming/main_colors.dart';
 
-class RegisterCardFormating extends StatelessWidget {
+class RegisterCard extends StatelessWidget {
 
   final Widget child;
-  const RegisterCardFormating({super.key, required this.child});
+  const RegisterCard({super.key, required this.child});
 
   @override
   Widget build(BuildContext context) {

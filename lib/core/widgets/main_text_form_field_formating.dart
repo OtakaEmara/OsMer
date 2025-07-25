@@ -10,7 +10,8 @@ class MainTextFormField extends StatelessWidget {
   final int? maxLines;
   final bool? expands;
   final InputDecoration? decoration;
-  final Icon? icon;
+  final Icon? prefixIcon;
+  final Icon? suffixIcon;
   final String? labelText;
   final String? hintText;
   final String? Function(String?)? validator;
@@ -18,9 +19,9 @@ class MainTextFormField extends StatelessWidget {
   final Function(String)? onChanged;
 
   const MainTextFormField({super.key,
-    required this.controller, this.keyboardType,this.labelText,
-    this.minLines, this.maxLines,this.expands,this.decoration,
-    this.validator, this.onTap, this.onChanged, this.icon, this.hintText,
+    required this.controller, this.keyboardType,this.labelText, this.minLines,
+    this.maxLines,this.expands,this.decoration, this.validator, this.onTap,
+    this.onChanged, this.prefixIcon, this.suffixIcon, this.hintText,
   });
 
   @override
@@ -34,37 +35,37 @@ class MainTextFormField extends StatelessWidget {
       cursorColor: MainColors.mainCyan,
       decoration: decoration ?? InputDecoration(
         enabledBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(20.w),
             borderSide: BorderSide(
                 color: MainColors.lighterShadeGrey,
                 width: 1
             )
         ),
         focusedBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(20.w),
             borderSide: const BorderSide(
                 color: MainColors.mainCyan,
                 width: 1.5
             )
         ),
         errorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(20.w),
             borderSide: const BorderSide(
                 color: MainColors.red,
                 width: 1.5
             )
         ),
         focusedErrorBorder: OutlineInputBorder(
-            borderRadius: BorderRadius.circular(15),
+            borderRadius: BorderRadius.circular(20.w),
             borderSide: const BorderSide(
                 color: MainColors.red,
                 width: 1.5
             )
         ),
-        label: Text(labelText??'',style: MainTextStyles.font17blueGrey300weight)
-        ,
+        label: Text(labelText??'',style: MainTextStyles.font17blueGrey300weight),
         contentPadding: EdgeInsets.symmetric(horizontal: 13.0.w, vertical: 13.0.h),
-        prefixIcon: icon,
+        prefixIcon: prefixIcon,
+        suffixIcon: suffixIcon,
         hintText: hintText??'',
         hintStyle: MainTextStyles.font16lighterShadeGrey400weight,
       ),

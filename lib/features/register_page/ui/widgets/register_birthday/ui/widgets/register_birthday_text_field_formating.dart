@@ -14,6 +14,7 @@ class RegisterBirthdayTextFieldFormating extends StatelessWidget {
         controller: MainConstant.birthdayController,
         labelText: 'Birthday (${DateTime.now().year - DateFormat.yMMMd().parse(MainConstant.birthdayController.text).year} years old)',
         maxLines: 1,
+        prefixIcon: const Icon(Icons.cake_outlined),
         validator: (p0) {
           if (p0!.isEmpty) {
             return 'Please enter your birthday';
