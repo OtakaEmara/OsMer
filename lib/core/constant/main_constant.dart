@@ -12,4 +12,6 @@ class MainConstant{
   static var mobileController = TextEditingController();
   static bool isEmailPage = true;
   static bool isMobilePage = false;
+  static var passwordFormKey = GlobalKey<FormState>();
+  static var passwordController = TextEditingController();
 }

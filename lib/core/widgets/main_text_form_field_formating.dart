@@ -6,6 +6,7 @@ import 'package:osmer/core/theming/main_text_styles.dart';
 class MainTextFormField extends StatelessWidget {
   final TextEditingController? controller;
   final TextInputType? keyboardType;
+  final bool? obscureText;
   final int? minLines;
   final int? maxLines;
   final bool? expands;
@@ -21,7 +22,7 @@ class MainTextFormField extends StatelessWidget {
   const MainTextFormField({super.key,
     required this.controller, this.keyboardType,this.labelText, this.minLines,
     this.maxLines,this.expands,this.decoration, this.validator, this.onTap,
-    this.onChanged, this.prefixIcon, this.suffixIcon, this.hintText,
+    this.onChanged, this.prefixIcon, this.suffixIcon, this.hintText, this.obscureText,
   });
 
   @override
@@ -70,6 +71,7 @@ class MainTextFormField extends StatelessWidget {
         hintStyle: MainTextStyles.font16lighterShadeGrey400weight,
       ),
       validator: validator,
+      obscureText: obscureText ?? false,
       minLines: minLines,
       maxLines: maxLines,
       expands: expands?? false,

@@ -46,15 +46,15 @@ class MainTextStyles{
     fontWeight: FontWeight.w400,
   );
 
-  static TextStyle font16grey300weight = TextStyle(
-    fontSize: 16.sp,
-    color: MainColors.grey,
-    fontWeight: FontWeight.w300,
-  );
-
   static TextStyle font16black300weight = TextStyle(
     fontSize: 16.sp,
     color: MainColors.black,
+    fontWeight: FontWeight.w300,
+  );
+
+  static TextStyle font15grey300weight = TextStyle(
+    fontSize: 15.sp,
+    color: MainColors.grey,
     fontWeight: FontWeight.w300,
   );
 }

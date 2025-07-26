@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:osmer/core/constant/main_constant.dart';
+import 'package:osmer/core/extension/navigation_extension.dart';
+import 'package:osmer/core/routing/routing_constant.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile/ui/widgets/register_email_or_mobile_design/ui/register_email_or_mobile_design.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile/ui/widgets/register_mobile/ui/widgets/register_mobile_text_field_formating.dart';
 
@@ -21,7 +23,7 @@ class _RegisterMobileState extends State<RegisterMobile> {
       registerCardBody: RegisterMobileTextFieldFormating(),
       onTapNext: () {
         if (MainConstant.mobileFormKey.currentState!.validate()) {
-
+          context.pushNamed(RoutingConstant.registerPassword);
         }
       },
       onTapToggle: () {

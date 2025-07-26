@@ -7,6 +7,7 @@ import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile
 import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile/ui/widgets/register_email/ui/register_email.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile/ui/widgets/register_mobile/ui/register_mobile.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_gender/ui/register_gender.dart';
+import 'package:osmer/features/register_page/ui/widgets/register_password/ui/register_password.dart';
 
 class RoutingGenerator{
 
@@ -34,6 +35,9 @@ class RoutingGenerator{
 
       case RoutingConstant.registerMobile:
         return MaterialPageRoute(builder: (_) => const RegisterMobile());
+
+      case RoutingConstant.registerPassword:
+        return MaterialPageRoute(builder: (_) => const RegisterPassword());
 
       default:
         return null;
