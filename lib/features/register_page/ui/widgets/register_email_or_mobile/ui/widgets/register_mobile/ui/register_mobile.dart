@@ -23,7 +23,7 @@ class _RegisterMobileState extends State<RegisterMobile> {
       registerCardBody: RegisterMobileTextFieldFormating(),
       onTapNext: () {
         if (MainConstant.mobileFormKey.currentState!.validate()) {
-          context.pushNamed(RoutingConstant.registerPassword);
+          context.pushNamed(RoutingConstant.registerConfirmationCode);
         }
       },
       onTapToggle: () {

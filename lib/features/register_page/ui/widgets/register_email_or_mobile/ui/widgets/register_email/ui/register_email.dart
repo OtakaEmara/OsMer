@@ -23,7 +23,7 @@ class _RegisterEmailState extends State<RegisterEmail> {
       registerCardBody: RegisterEmailTextFieldFormating(),
       onTapNext: () {
         if (MainConstant.emailFormKey.currentState!.validate()) {
-          context.pushNamed(RoutingConstant.registerPassword);
+          context.pushNamed(RoutingConstant.registerConfirmationCode);
         }
       },
       onTapToggle: () {

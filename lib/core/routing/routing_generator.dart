@@ -3,6 +3,7 @@ import 'package:osmer/core/routing/routing_constant.dart';
 import 'package:osmer/features/home_page/ui/home_page.dart';
 import 'package:osmer/features/register_page/ui/register_page.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_birthday/ui/register_birthday.dart';
+import 'package:osmer/features/register_page/ui/widgets/register_confirmation_code/ui/register_confirmation_code.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile/ui/register_email_or_mobile.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile/ui/widgets/register_email/ui/register_email.dart';
 import 'package:osmer/features/register_page/ui/widgets/register_email_or_mobile/ui/widgets/register_mobile/ui/register_mobile.dart';
@@ -38,6 +39,9 @@ class RoutingGenerator{
 
       case RoutingConstant.registerPassword:
         return MaterialPageRoute(builder: (_) => const RegisterPassword());
+
+      case RoutingConstant.registerConfirmationCode:
+        return MaterialPageRoute(builder: (_) => const RegisterConfirmationCode());
 
       default:
         return null;

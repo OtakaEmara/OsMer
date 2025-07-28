@@ -8,5 +8,6 @@ class RoutingConstant{
   static const registerEmail = '/register_email';
   static const registerMobile = '/register_mobile';
   static const registerPassword = '/register_password';
+  static const registerConfirmationCode = '/register_confirmation_code';
 
 }
