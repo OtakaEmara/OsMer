@@ -1,4 +1,4 @@
-package OsMer.com.osmer
+package OsMer.com
 
 import io.flutter.embedding.android.FlutterActivity
 

@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1060399977709",
+    "project_id": "osmer410",
+    "storage_bucket": "osmer410.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060399977709:android:381d6a4d6333ad5416a8e4",
+        "android_client_info": {
+          "package_name": "OsMer.com"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMJeFPLSeYle9iXfB_Wx6rp67a5NVmgPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1060399977709:android:effa783d030cdd5316a8e4",
+        "android_client_info": {
+          "package_name": "OsMer.com.osmer"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAMJeFPLSeYle9iXfB_Wx6rp67a5NVmgPI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
